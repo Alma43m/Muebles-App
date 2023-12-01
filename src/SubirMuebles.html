@@ -11,15 +11,15 @@
     <!-- CSS PERSONALIZADO -->
     <link rel="stylesheet" href="style.css">
     <!-- El modulo Main contiene lo necesario para que el programa funcione -->
-    <script type="module" src="./mainManualidad.js"></script>
-    <title>Manualidades UTN</title>
+    <script type="module" src="./mainMuebles.js"></script>
+    <title>MUEBLES ALMA RUTH</title>
 </head>
 
 <body>
-    <!-- Navbar con tema oscuro -->
+    <!-- BARRA DE NAVEGACION -->
     <nav class="fixed-top">
         <div>
-            <h1 href="#">ORGANIZACIONES UNIVERSALES </h1>
+            <h1 href="#">MUEBLES ALMA RUTH</h1>
             <div tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
                 <div>
                     <h4 id="offcanvasNavbarLabel">Opciones</h4>
@@ -35,13 +35,12 @@
                                 data-bs-target="#Registrarse">REGISTRARSE</a>
                         </li>
                         <li class="nav-item">
-                            <a class="botonesConSesion" id="Mostrar-Manualidades"
-                                href="SubirOrganizaciones.html">REGISTRAR UNA
-                                ORGANIZACION</a>
+                            <a class="botonesConSesion" id="Mostrar-Manualidades" href="SubirMuebles.html">REGISTRAR UN
+                                MUEBLE</a>
                         </li>
                         <li class="nav-item">
                             <a class="botonesConSesion" id="Mostrar-Manualidades" href="index.html">VER
-                                ORGANIZACIONES</a>
+                                MUEBLES</a>
                         </li>
                         <li class="nav-item">
                             <a class="botonesConSesion" id="CerrarSesion">CERRAR SESIÓN</a>
@@ -53,35 +52,32 @@
     </nav>
 
     <!-- Contenido del cuerpo aquí -->
-    <div id="manualidad-form-container" class="custom-container">
+
+    <!-- REGISTRO DE MUEBLES  -->
+    <div id="mueble-form-container" class="custom-container">
         <div class="custom-row">
-            <form id="Formulario-Organizacion" class="custom-col">
+            <form id="Formulario-Mueble" class="custom-col">
                 <div class="contenedor-datos">
-                    <label for="Nombre-Organizacion" class="custom-form-label" Nombre de la Organización:</label>
-                        <input type="text" class="custom-form-control" id="Nombre-Organizacion"
-                            placeholder="Nombre de la Organización">
+                    <label for="TipoMueble" class="custom-form-label">Tipo de Mueble:</label>
+                    <input type="text" class="custom-form-control" id="TipoMueble" placeholder="Tipo de Mueble">
                 </div>
                 <div class="contenedor-datos">
-                    <label for="Integrantes-Organizacion" class="custom-form-label" Número de Integrantes:</label>
-                        <input type="number" class="custom-form-control" id="Integrantes-Organizacion"
-                            placeholder="Número de Integrantes">
+                    <label for="Material" class="custom-form-label">Material:</label>
+                    <input type="text" class="custom-form-control" id="Material" placeholder="Material">
                 </div>
                 <div class="contenedor-datos">
-                    <label for="Lider-Organizacion" class="custom-form-label" Líder de la Organización:</label>
-                        <input type="text" class="custom-form-control" id="Lider-Organizacion"
-                            placeholder="Líder de la Organización">
+                    <label for="Estilo" class="custom-form-label">Estilo:</label>
+                    <input type="text" class="custom-form-control" id="Estilo" placeholder="Estilo">
                 </div>
                 <div class="contenedor-datos">
-                    <label for="NumeroAliados-Organizacion" class="custom-form-label" Número de Aliados:</label>
-                        <input type="number" class="custom-form-control" id="NumeroAliados-Organizacion"
-                            placeholder="Número de Aliados">
+                    <label for="FechaFabricacion" class="custom-form-label">Fecha de Fabricación:</label>
+                    <input type="date" class="custom-form-control" id="FechaFabricacion">
                 </div>
                 <div class="contenedor-datos">
-                    <label for="Fecha-Contratacion-Organizacion" class="custom-form-label" Fecha de
-                        Contratación:</label>
-                        <input type="date" class="custom-form-control" id="Fecha-Contratacion-Organizacion">
+                    <label for="Color" class="custom-form-label">Color:</label>
+                    <input type="text" class="custom-form-control" id="Color" placeholder="Color">
                 </div>
-                <button type="submit" class="btn btn-primary" id="Guardar-Organizacion">Guardar Organización</button>
+                <button type="submit" class="btn btn-primary" id="Guardar-Mueble">Guardar Mueble</button>
             </form>
         </div>
     </div>

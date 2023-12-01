@@ -10,14 +10,14 @@
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
     <link rel="stylesheet" href="style.css">
     <script type="module" src="./main.js"></script>
-    <title>ORGANIZACIONES UNIVERSALES</title>
+    <title>MUEBLES ALMA RUTH</title>
 </head>
 
 <body>
     <!-- Navbar con tema oscuro -->
     <nav class="fixed-top">
         <div>
-            <h1 href="#">ORGANIZACIONES UNIVERSALES </h1>
+            <h1 href="#">MUEBLES ALMA RUTH</h1>
             <div tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
                 <div>
                     <h4 id="offcanvasNavbarLabel">Opciones</h4>
@@ -33,13 +33,12 @@
                                 data-bs-target="#Registrarse">REGISTRARSE</a>
                         </li>
                         <li class="nav-item">
-                            <a class="botonesConSesion" id="Mostrar-Manualidades"
-                                href="SubirOrganizaciones.html">REGISTRAR UNA
-                                ORGANIZACION</a>
+                            <a class="botonesConSesion" id="Mostrar-Manualidades" href="SubirMuebles.html">REGISTRAR UN
+                                MUEBLE</a>
                         </li>
                         <li class="nav-item">
                             <a class="botonesConSesion" id="Mostrar-Manualidades" href="index.html">VER
-                                ORGANIZACIONES</a>
+                                MUEBLES</a>
                         </li>
                         <li class="nav-item">
                             <a class="botonesConSesion" id="CerrarSesion">CERRAR SESIÓN</a>
@@ -52,56 +51,56 @@
 
     <!-- Contenido del cuerpo aquí -->
 
-    <!-- Lista de Organizaciones -->
+    <!-- Lista de Muebles -->
     <div class="custom-container">
         <div class="custom-row">
             <div class="custom-col">
-                <ul class="custom-list-group Organizaciones"></ul>
+                <ul class="custom-list-group Muebles"></ul>
             </div>
         </div>
     </div>
 
     <!-- MODAL DE ACTUALIZACIÓN -->
-    <div class="modal fade" id="ActualizarOrganizacion" tabindex="-1" aria-labelledby="exampleModalLabel"
-        aria-hidden="true">
+    <div class="modal fade" id="ActualizarMueble" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content bg-dark text-light">
                 <div class="modal-header bg-dark">
-                    <h1 class="modal-title fs-5" id="exampleModalLabel">Actualizar Organización</h1>
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Actualizar Mueble</h1>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <form id="Formulario-ActualizarOrganizacion">
+                    <form id="Formulario-ActualizarMueble">
                         <div class="mb-3">
-                            <label for="Actualizar-Nombre">Nombre de la Organización</label>
-                            <input type="text" id="Actualizar-Nombre" class="form-control mb-3"
-                                placeholder="Ingresa el nuevo nombre">
+                            <label for="Actualizar-TipoMueble">Tipo de Mueble</label>
+                            <input type="text" id="Actualizar-TipoMueble" class="form-control mb-3"
+                                placeholder="Ingresa el nuevo tipo de mueble">
                         </div>
                         <div class="mb-3">
-                            <label for="Actualizar-Integrantes">Número de Integrantes</label>
-                            <input type="number" id="Actualizar-Integrantes" class="form-control mb-3"
-                                placeholder="Ingresa el nuevo número de integrantes">
+                            <label for="Actualizar-Material">Material</label>
+                            <input type="text" id="Actualizar-Material" class="form-control mb-3"
+                                placeholder="Ingresa el nuevo material">
                         </div>
                         <div class="mb-3">
-                            <label for="Actualizar-Lider">Líder</label>
-                            <input type="text" id="Actualizar-Lider" class="form-control mb-3"
-                                placeholder="Ingresa el nuevo líder">
+                            <label for="Actualizar-Estilo">Estilo</label>
+                            <input type="text" id="Actualizar-Estilo" class="form-control mb-3"
+                                placeholder="Ingresa el nuevo estilo">
                         </div>
                         <div class="mb-3">
-                            <label for="Actualizar-NumeroAliados">Número de Aliados</label>
-                            <input type="number" id="Actualizar-NumeroAliados" class="form-control mb-3"
-                                placeholder="Ingresa el nuevo número de aliados">
+                            <label for="Actualizar-FechaFabricacion">Fecha de Fabricación</label>
+                            <input type="date" id="Actualizar-FechaFabricacion" class="form-control mb-3">
                         </div>
                         <div class="mb-3">
-                            <label for="Actualizar-FechaContratacion">Fecha de Contratación</label>
-                            <input type="date" id="Actualizar-FechaContratacion" class="form-control mb-3">
+                            <label for="Actualizar-Color">Color</label>
+                            <input type="text" id="Actualizar-Color" class="form-control mb-3"
+                                placeholder="Ingresa el nuevo color">
                         </div>
-                        <button class="btn btn-primary w-100 mb-2 edit Boton-ActualizarOrganizacion">Actualizar</button>
+                        <button class="btn btn-primary w-100 mb-2 edit Boton-ActualizarMueble">Actualizar</button>
                     </form>
                 </div>
             </div>
         </div>
     </div>
+
 
     <!-- MODAL DE INICIO DE SESION -->
     <div class="modal fade" id="InicioSesion" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">

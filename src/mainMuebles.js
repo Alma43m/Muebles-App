@@ -7,15 +7,10 @@ import './app/iniciaSesionEmailAndPass.js'
 import './app/iniciaSesionFacebook.js'
 import './app/iniciaSesionGoogle.js'
 import './app/formularioRegistro.js'
+import './app/subirMuebles.js'
 import './app/cierreSesion.js'
 
 onAuthStateChanged(auth, async (usuario) => {
-    if (usuario) {
-        // Si el usuario está en el index, muestra la lista de manualidades
-        const querySnapshot = await getDocs(collection(db, 'Muebles'))
-        MostrarListaMuebles(querySnapshot.docs);
-    } else {
-        MostrarListaMuebles([]);  // Puedes ajustar esto según tu lógica
-    }
+
     revisaSesion(usuario);
 });
